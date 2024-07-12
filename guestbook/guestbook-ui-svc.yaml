@@ -19,10 +19,9 @@ metadata:
   name: guestbook-ui-me
 spec:
   ports:
-    - name: http8080
-      port: 80
-      protocol: TCP
-      targetPort: 8085
+  - port: 80
+    protocol: TCP
+    targetPort: 8085
   selector:
     app: guestbook-ui-me
   sessionAffinity: None
