@@ -16,14 +16,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: guestbook-ui-me
+  name: guestbook-ui
 spec:
   ports:
   - port: 80
-    protocol: TCP
     targetPort: 80
   selector:
-    app: guestbook-ui-me
-  sessionAffinity: None
-  type: ClusterIP
-  loadBalancer: {}
+    app: guestbook-ui
