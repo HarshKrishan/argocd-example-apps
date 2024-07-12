@@ -18,7 +18,6 @@ kind: Service
 metadata:
   name: guestbook-ui-me
 spec:
-  type: NodePort
   ports:
   - port: 80
     protocol: TCP
