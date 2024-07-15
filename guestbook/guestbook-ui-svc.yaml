@@ -5,7 +5,7 @@ metadata:
 spec:
   type: NodePort
   ports:
-  - port: 8081
+  - port: 80
     protocol: TCP
     targetPort: 80
     nodePort: 31112  
